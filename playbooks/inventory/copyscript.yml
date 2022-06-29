@@ -1,0 +1,17 @@
+- hosts: hosts
+  tasks:
+    - name: Copy2
+      copy: src=/home/fkp/testTask dest=/home/fkp/pig2
+      when: hosts == "pig2"
+  tasks:
+    - name: Copy3
+      copy: src=/home/fkp/testTask dest=/home/fkp/pig3
+      when: hosts == "pig3" 
+  tasks:
+    - name: Copy4
+      copy: src=/home/fkp/testTask dest=/home/fkp/pig3
+      when: hosts == "pig4" 	
+  tasks:
+    - name: Copy5
+      copy: src=/home/fkp/testTask dest=/home/fkp/pig3
+      when: hosts == "pig5"

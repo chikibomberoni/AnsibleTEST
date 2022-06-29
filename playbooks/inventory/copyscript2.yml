@@ -1,0 +1,11 @@
+- hosts: hosts
+  tasks:
+   - name: Copy file
+     ansible.builtin.copy:
+       src: /home/fkp/testTask
+       dest: /home/fkp/{{host}}
+   - name: Check ip
+     ansible.builtin.copy:
+       src: /home/fkp/testTask
+       dest: /home/fkp/{{host}}
+         
