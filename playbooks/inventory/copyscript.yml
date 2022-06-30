@@ -11,7 +11,4 @@
     - name: Copy4
       copy: src=/home/fkp/testTask dest=/home/fkp/pig3
       when: hosts == "pig4" 	
-  tasks:
-    - name: Copy5
-      copy: src=/home/fkp/testTask dest=/home/fkp/pig3
-      when: hosts == "pig5"
+  
