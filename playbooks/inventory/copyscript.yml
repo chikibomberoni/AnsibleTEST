@@ -19,3 +19,7 @@
     -name: Copy6
       copy: src =/home/fkp/testTask dest=/home/fkp/pig6
       when: hosts == "pig6"
+  tasks:
+    -name: Copy7
+      copy: src =/home/fkp/testTask dest=/home/fkp/pig7
+      when: hosts == "pig7"      
